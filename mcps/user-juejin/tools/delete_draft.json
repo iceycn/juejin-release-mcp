@@ -1,0 +1,14 @@
+{
+  "name": "delete_draft",
+  "description": "删除掘金文章草稿。根据草稿 ID 删除草稿。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "draftId": {
+        "type": "string",
+        "description": "草稿 ID，必填"
+      }
+    },
+    "required": ["draftId"]
+  }
+}

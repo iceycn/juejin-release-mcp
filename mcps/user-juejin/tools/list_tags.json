@@ -1,0 +1,21 @@
+{
+  "name": "list_tags",
+  "description": "获取掘金文章标签列表。返回热门标签或根据关键词搜索标签。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "keyword": {
+        "type": "string",
+        "description": "搜索关键词，可选"
+      },
+      "page": {
+        "type": "integer",
+        "description": "页码，默认 1"
+      },
+      "pageSize": {
+        "type": "integer",
+        "description": "每页数量，默认 20"
+      }
+    }
+  }
+}

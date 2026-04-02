@@ -1,0 +1,51 @@
+{
+  "name": "update_draft",
+  "description": "更新掘金文章草稿（content_api/v1/article_draft/update?aid=&uuid=）。可选 publishAfterUpdate=true 时，在更新成功后调用 article/publish，实现「更新并发布」。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "draftId": {
+        "type": "string",
+        "description": "草稿 ID（请求体 id），必填"
+      },
+      "title": { "type": "string", "description": "标题，可选" },
+      "content": { "type": "string", "description": "正文 Markdown（mark_content），可选" },
+      "description": { "type": "string", "description": "摘要（brief_content），可选" },
+      "categoryId": { "type": "string", "description": "分类 category_id，可选" },
+      "tagIds": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "标签 tag_ids，可选"
+      },
+      "linkUrl": { "type": "string", "description": "link_url，可选" },
+      "coverImage": { "type": "string", "description": "封面 cover_image，可选" },
+      "isGfw": { "type": "integer", "description": "is_gfw，可选" },
+      "isEnglish": { "type": "integer", "description": "is_english，可选" },
+      "isOriginal": { "type": "integer", "description": "is_original，可选" },
+      "editType": { "type": "integer", "description": "edit_type，可选" },
+      "themeIds": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "theme_ids，可选"
+      },
+      "pics": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "pics，可选"
+      },
+      "publishAfterUpdate": {
+        "type": "boolean",
+        "description": "为 true 时更新成功后调用发布接口（更新并发布）"
+      },
+      "encryptedWordCount": {
+        "type": "integer",
+        "description": "发布时 encrypted_word_count，可选"
+      },
+      "originWordCount": {
+        "type": "integer",
+        "description": "发布时 origin_word_count，可选；未传且提供 content 时用正文长度估算"
+      }
+    },
+    "required": ["draftId"]
+  }
+}

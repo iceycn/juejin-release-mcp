@@ -1,0 +1,37 @@
+{
+  "name": "create_draft",
+  "description": "创建掘金文章草稿。仅创建草稿不发布，返回草稿 ID。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "文章标题，必填"
+      },
+      "content": {
+        "type": "string",
+        "description": "文章正文，Markdown 格式，必填"
+      },
+      "description": {
+        "type": "string",
+        "description": "文章摘要，可选"
+      },
+      "categoryId": {
+        "type": "string",
+        "description": "分类 ID，可选"
+      },
+      "tagIds": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "标签 ID 列表，可选"
+      },
+      "coverImage": {
+        "type": "string",
+        "description": "封面图片 URL，可选"
+      }
+    },
+    "required": ["title", "content"]
+  }
+}

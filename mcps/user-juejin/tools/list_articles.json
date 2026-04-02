@@ -1,0 +1,25 @@
+{
+  "name": "list_articles",
+  "description": "获取当前用户文章列表（article/list_by_user?aid=&uuid=&spider=0）。支持 keyword、audit_status。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "page": {
+        "type": "integer",
+        "description": "page_no，从 1 开始，默认 1"
+      },
+      "pageSize": {
+        "type": "integer",
+        "description": "page_size，默认 10"
+      },
+      "keyword": {
+        "type": "string",
+        "description": "搜索关键词，可选"
+      },
+      "auditStatus": {
+        "type": "integer",
+        "description": "audit_status，可选；与网页一致时可传 null（不传则由服务端默认）"
+      }
+    }
+  }
+}

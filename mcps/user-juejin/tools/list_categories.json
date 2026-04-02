@@ -1,0 +1,8 @@
+{
+  "name": "list_categories",
+  "description": "获取掘金文章分类列表。返回所有可用的文章分类。",
+  "arguments": {
+    "type": "object",
+    "properties": {}
+  }
+}

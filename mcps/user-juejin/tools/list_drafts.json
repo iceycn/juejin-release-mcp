@@ -1,0 +1,17 @@
+{
+  "name": "list_drafts",
+  "description": "获取掘金文章草稿列表。分页查询当前用户的草稿。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "page": {
+        "type": "integer",
+        "description": "页码，从 1 开始，默认 1"
+      },
+      "pageSize": {
+        "type": "integer",
+        "description": "每页数量，默认 10，最大 100"
+      }
+    }
+  }
+}

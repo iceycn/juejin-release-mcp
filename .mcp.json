@@ -1,0 +1,84 @@
+{
+  "mcpServers": {
+    "confluence-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zereight/mcp-confluence"
+      ],
+      "env": {
+        "CONFLUENCE_URL": "https://wiki.beisen-inc.com",
+        "JIRA_URL": "https://jira.beisen-inc.com/",
+        "CONFLUENCE_API_MAIL": "yangyongping",
+        "CONFLUENCE_API_KEY": "by@123bs2",
+        "CONFLUENCE_IS_CLOUD": "false"
+      }
+    },
+    "plantuml": {
+      "command": "npx",
+      "args": [
+        "plantuml-mcp-server"
+      ],
+      "env": {
+        "PLANTUML_SERVER_URL": "https://www.plantuml.com/plantuml"
+      }
+    },
+    "mysql-enterprise-coolcollege": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mysql-query-mcp-server@latest"
+      ],
+      "env": {
+        "LOCAL_DB_HOST": "rm-bp14q14i7935jruax.mysql.rds.aliyuncs.com",
+        "LOCAL_DB_USER": "cool",
+        "LOCAL_DB_PASS": "Cx111111@",
+        "LOCAL_DB_NAME": "coolcollege",
+        "DEBUG": "true"
+      }
+    },
+    "mysql-pdbx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mysql-query-mcp-server@latest"
+      ],
+      "env": {
+        "LOCAL_DB_HOST": "pxc-hzrf7bbvrkgmy2.polarx.rds.aliyuncs.com",
+        "LOCAL_DB_USER": "cool",
+        "LOCAL_DB_PASS": "Cx111111@",
+        "LOCAL_DB_NAME": "tt_authority_center",
+        "DEBUG": "true"
+      }
+    },
+    "apollo": {
+      "command": "uvx",
+      "args": [
+        "apollo-mcp-server",
+        "--url",
+        "http://121.40.181.107:8070",
+        "--token",
+        "80ee4d277632d8ab20f1d5fe0abec414f7020ef0"
+      ]
+    },
+    "yunxiao": {
+      "command": "npx",
+      "args": ["-y", "alibabacloud-devops-mcp-server"],
+      "env": {
+        "YUNXIAO_ACCESS_TOKEN": "pt-KELtqP4I7dIH7poNQHiYGMlN_d5c85661-fc8c-499d-b685-9f8d689a5dbf",
+        "YUNXIAO_API_BASE_URL": "https://openapi-rdc.aliyuncs.com"
+      }
+    },
+    "kubernetes": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "kubernetes-mcp-server@latest",
+        "--read-only",
+        "--kubeconfig",
+        "~/.kube/config"
+      ]
+    }
+  }
+}

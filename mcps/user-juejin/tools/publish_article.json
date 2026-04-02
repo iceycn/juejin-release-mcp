@@ -1,0 +1,33 @@
+{
+  "name": "publish_article",
+  "description": "发布文章到掘金平台：先 article_draft/create 再 article/publish（与网页一致，URL 带 aid/uuid）。需配置 JUEJIN_COOKIE；建议完整 Cookie 并配置 JUEJIN_AID/JUEJIN_UUID。HTTP 端使用 certifi 做 TLS 校验。联调结论见 MCP_PROTOCOL.md。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "文章标题，必填"
+      },
+      "content": {
+        "type": "string",
+        "description": "文章正文，Markdown 格式，必填"
+      },
+      "description": {
+        "type": "string",
+        "description": "文章摘要，可选。为空时自动从正文提取前100字"
+      },
+      "categoryId": {
+        "type": "string",
+        "description": "分类 ID，可选。默认为后端分类(6809637769959178254)"
+      },
+      "tagIds": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "标签 ID 列表，可选。默认为后端标签(6809640408797167623)"
+      }
+    },
+    "required": ["title", "content"]
+  }
+}

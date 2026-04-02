@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "juejin-mcp": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "cd /Users/beisen/PycharmProjects/juejin-release-mcp && source .venv/bin/activate && python -m user_juejin.server"
+      ],
+      "env": {
+        "JUEJIN_COOKIE": "sessionid=dc673cde72c7c81539d2fa39e65f532e"
+      }
+    }
+  }
+}

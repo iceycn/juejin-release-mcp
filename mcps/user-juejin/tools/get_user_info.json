@@ -1,0 +1,8 @@
+{
+  "name": "get_user_info",
+  "description": "获取当前登录用户信息。用于验证 Cookie 是否有效。",
+  "arguments": {
+    "type": "object",
+    "properties": {}
+  }
+}

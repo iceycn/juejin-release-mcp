@@ -1,0 +1,11 @@
+{
+  "serverIdentifier": "user-juejin",
+  "serverName": "juejin",
+  "version": "0.1.1",
+  "description": "掘金创作者 HTTP API 的 MCP 封装：发文、草稿、文章列表、分类标签等。联调说明见同目录 MCP_PROTOCOL.md；运行时 instructions 见 Python 包 mcp_instructions.py。",
+  "runtime": {
+    "type": "python",
+    "package": "user-juejin-mcp",
+    "entry": "user_juejin.server:main"
+  }
+}
