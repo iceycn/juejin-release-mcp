@@ -5,6 +5,7 @@
     <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python Version">
     <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
     <img src="https://img.shields.io/badge/MCP-protocol-orange.svg" alt="MCP Protocol">
+    <a href="https://pypi.org/project/juejin-release-mcp/"><img src="https://badge.fury.io/py/juejin-release-mcp.svg" alt="PyPI version"></a>
 </p>
 
 **掘金 MCP 服务器** 是一个基于 [MCP 协议](https://modelcontextprotocol.io) 的掘金平台接入服务，让 AI 助手（如 Claude、Cursor、Trae 等）能够直接管理你的掘金文章。
@@ -102,7 +103,7 @@ pip install juejin-release-mcp
 #### 方式三：源码安装
 
 ```bash
-git clone https://github.com/yourname/juejin-release-mcp.git
+git clone https://github.com/iceycn/juejin-release-mcp.git
 cd juejin-release-mcp
 pip install -e .
 ```
@@ -293,7 +294,6 @@ A: 请检查必填参数是否正确传递，特别是 `title` 和 `content` 字
 1. **Cookie 安全**: Cookie 包含敏感信息，请勿泄露或提交到代码仓库
 2. **Cookie 有效期**: Cookie 可能会过期，如遇鉴权失败请重新获取
 3. **接口限制**: 掘金 API 可能有频率限制，请合理使用
-4. **字数统计**: `encrypted_word_count` 和 `origin_word_count` 参数为可选，如需精确控制可从浏览器抓包获取
 
 ---
 
