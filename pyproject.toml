@@ -1,12 +1,12 @@
 [project]
-name = "user-juejin-mcp"
+name = "juejin-release-mcp"
 version = "0.1.1"
 description = "掘金 MCP 服务器 - 使大语言模型通过 MCP 协议管理掘金文章"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your@email.com"}
+    {name = "iceycn", email = "wuhun0301@qq.com"}
 ]
 keywords = ["mcp", "juejin", "article", "publish", "掘金"]
 classifiers = [
@@ -35,13 +35,13 @@ dev = [
 ]
 
 [project.scripts]
-user-juejin-mcp = "user_juejin.server:main"
+juejin-release-mcp = "user_juejin.server:main"
 
 [project.urls]
-Homepage = "https://github.com/yourname/user-juejin-mcp"
-Repository = "https://github.com/yourname/user-juejin-mcp"
-Documentation = "https://github.com/yourname/user-juejin-mcp#readme"
-Issues = "https://github.com/yourname/user-juejin-mcp/issues"
+Homepage = "https://github.com/iceycn/juejin-release-mcp"
+Repository = "https://github.com/iceycn/juejin-release-mcp"
+Documentation = "https://github.com/iceycn/juejin-release-mcp#readme"
+Issues = "https://github.com/iceycn/juejin-release-mcp/issues"
 
 [build-system]
 requires = ["hatchling"]
