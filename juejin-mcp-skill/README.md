@@ -14,9 +14,22 @@
 - **查询内容** - 获取文章、分类、标签
 - **自动化工作流** - 简化内容发布流程
 
-## 安装
+## 安装配置
 
-### 1. 安装 MCP 服务器
+### 方式一：AI 助手配置（最简单）
+
+直接告诉你的 AI 助手（如龙虾、Cursor）：
+
+```
+请帮我配置 juejin-mcp-skills 技能，
+我的掘金 Cookie 是：sessionid=dc673cde72c7c81539d2fa3xxxxxxxx
+```
+
+AI 会自动帮你完成配置。
+
+### 方式二：手动配置
+
+#### 1. 安装 MCP 服务器
 
 ```bash
 # 使用 uvx（推荐）
@@ -26,7 +39,7 @@ uvx juejin-release-mcp
 pip install juejin-release-mcp
 ```
 
-### 2. 获取 Cookie
+#### 2. 获取 Cookie
 
 1. 登录[掘金](https://juejin.cn/)并进入创作者中心
 2. 打开开发者工具（F12）→ Network 标签
@@ -35,7 +48,7 @@ pip install juejin-release-mcp
 
 > ⚠️ **重要提醒**：掘金 Cookie 有效期约为 **30 天**，过期后需要重新获取并更新配置。如果遇到鉴权失败，请重新执行上述步骤获取新的 Cookie。
 
-### 3. 配置 Cursor
+#### 3. 配置 Cursor
 
 添加到你的 Cursor MCP 设置：
 
